@@ -1,0 +1,43 @@
+.icon-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    top: 100px;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform-origin: -150px;
+    animation: rotate 10s infinite linear;
+}
+
+.icon:nth-child(1) {
+    transform: rotate(0deg) translateX(150px);
+}
+
+.icon:nth-child(2) {
+    transform: rotate(72deg) translateX(150px);
+}
+
+.icon:nth-child(3) {
+    transform: rotate(144deg) translateX(150px);
+}
+
+.icon:nth-child(4) {
+    transform: rotate(216deg) translateX(150px);
+}
+
+.icon:nth-child(5) {
+    transform: rotate(288deg) translateX(150px);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
